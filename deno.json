@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "tasks": {
+    "main": "deno run -ER --allow-run=7z src/main.ts",
+    "compile": "deno compile -ER --allow-run=7z src/main.ts"
+  },
+  "fmt": {
+    "lineWidth": 150,
+    "include": [
+      "src/"
+    ]
+  },
+  "imports": {
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.2",
+    "@std/path": "jsr:@std/path@^1.0.6"
+  }
+}
